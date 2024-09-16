@@ -1,0 +1,14 @@
+.hero {
+  max-height: 1200px;
+  background-image: url("/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: right -290px top -250px
+}
+
+/* Tablet and mobile devices */
+@media (max-width: 1024px) {
+  .hero {
+    background-image: none;
+  }
+}
+
