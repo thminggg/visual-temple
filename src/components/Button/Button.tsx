@@ -6,7 +6,7 @@ export const Button = ({
   className?: string;
 }) => (
   <button
-    className={`bg-main text-white font-semibold px-6 py-4 rounded-xl ${className}`}
+    className={`bg-accent text-white font-semibold min-w-[200px] min-h-[60px] rounded-xl ${className}`}
   >
     {text}
   </button>

@@ -1,0 +1,36 @@
+@import "../common.module.scss";
+
+@keyframes scrollAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-30%);
+  }
+}
+
+@keyframes scrollAnimationReverse {
+  0%,
+  100% {
+    transform: translateX(-200);
+  }
+
+  50% {
+    transform: translateX(30%);
+  }
+}
+
+.scrollContent {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width: fit-content;
+  animation: scrollAnimation 25s linear infinite;
+}
+
+.scrollContentReverse {
+  @extend .scrollContent;
+  animation: scrollAnimationReverse 25s linear infinite;
+}

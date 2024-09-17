@@ -1,0 +1,23 @@
+.svg > svg {
+  min-width: 8rem;
+  min-height: 8rem;
+  cursor: pointer;
+}
+
+/* Tablet and mobile devices */
+@media (max-width: 1024px) {
+.svg>svg {
+    min-width: 7rem;
+    min-height: 7rem;
+  }
+}
+
+.stacks img {
+  min-height: 8rem;
+  min-width: auto;
+  display: inline-block;
+}
+
+.scrollContent:hover {
+  animation-play-state: paused;
+}
