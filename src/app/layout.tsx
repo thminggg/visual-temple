@@ -1,3 +1,4 @@
+import Nav from "@/containers/Nav/Nav";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -39,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${SFRoundedFont.className}`}>{children}</body>
+      <body className={`${SFRoundedFont.className}`}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
